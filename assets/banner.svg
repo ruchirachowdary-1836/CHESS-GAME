@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-label="Chess Game banner">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1020"/>
+      <stop offset="1" stop-color="#1A1240"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7C3AED"/>
+      <stop offset="0.5" stop-color="#A78BFA"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0.45" stop-color="#fff" stop-opacity="1"/>
+    </linearGradient>
+    <mask id="boardmask" maskUnits="userSpaceOnUse" x="640" y="0" width="640" height="320">
+      <rect x="640" y="0" width="640" height="320" fill="url(#fade)"/>
+    </mask>
+    <pattern id="board" width="80" height="80" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="#A78BFA" fill-opacity="0.10"/>
+      <rect x="40" y="40" width="40" height="40" fill="#A78BFA" fill-opacity="0.10"/>
+    </pattern>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#7C3AED" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="320" rx="24" fill="url(#bg)"/>
+  <rect x="640" y="0" width="640" height="320" rx="24" fill="url(#board)" mask="url(#boardmask)"/>
+  <circle cx="1050" cy="160" r="170" fill="url(#glow)"/>
+
+  <text x="1050" y="228" text-anchor="middle" font-size="200" fill="#FBBF24"
+        font-family="'Segoe UI Symbol','DejaVu Sans','Noto Sans Symbols 2',serif">&#9818;</text>
+
+  <text x="80" y="150" font-size="84" font-weight="800" letter-spacing="6" fill="#F8FAFC"
+        font-family="'Segoe UI',Helvetica,Arial,sans-serif">CHESS GAME</text>
+  <rect x="84" y="176" width="300" height="6" rx="3" fill="url(#accent)"/>
+  <text x="82" y="232" font-size="28" fill="#A78BFA"
+        font-family="'Segoe UI',Helvetica,Arial,sans-serif">Two players. One board. Every move in the browser.</text>
+  <text x="82" y="272" font-size="20" fill="#22D3EE" letter-spacing="2"
+        font-family="'Segoe UI',Helvetica,Arial,sans-serif">HTML  ·  CSS  ·  JAVASCRIPT  ·  JQUERY</text>
+</svg>
